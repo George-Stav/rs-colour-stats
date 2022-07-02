@@ -1,3 +1,4 @@
+// TODO: Code comments
 extern crate termion;
 extern crate image;
 use termion::{color, style};
@@ -63,6 +64,7 @@ impl std::fmt::Display for Colour {
 }
 
 fn main() {
+    // TODO: Help menu + shell arguments
     let args: Vec<String> = env::args().collect();
     // TODO: Better error messages
     if args.len() == 1 {panic!("Expected more at least one argument.")}
